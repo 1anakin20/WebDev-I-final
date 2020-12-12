@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+#menu-bar {
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    color: black;
+    background-color: #E5E4E2;
+}
+
+#menu-bar > li {
+    display: inline;
+}
+
+.app-menus {
+    padding-right: 10px;
+}
+
+.status-menus {
+    float: right;
+    padding-left: 10px;
+}
