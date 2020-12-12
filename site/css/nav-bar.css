@@ -2,6 +2,11 @@ body {
     margin: 0;
 }
 
+.texture {
+    background-color: #8f8c8c;
+    background-image: url("../image/texture/concrete-wall-3.png");
+}
+
 /* Navbar */
 #menu-bar {
     padding: 5px;
@@ -30,7 +35,7 @@ body {
     float: right;
     height: 100vh;
     background-color: #8f8c8c;
-    /* background-image: url("https://www.transparenttextures.com/patterns/squared-metal.png"); */
+    background-color: #8f8c8c;
 }
 
 #sidebar > ul {
