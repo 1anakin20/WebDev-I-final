@@ -47,6 +47,7 @@ body {
     height: 100vh;
     background-color: #8f8c8c;
     background-color: #8f8c8c;
+    border-left: 2px solid;
 }
 
 #sidebar > ul {
