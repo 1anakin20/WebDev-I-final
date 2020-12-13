@@ -14,13 +14,13 @@ function clock() {
 
 /**
  * Sets the year in the menu bar
- * @param {number} year - Year to display, leave parameter empty for current year
+ * @param {string} year - Year to display, leave the string empty for current year
  */
-function setYear(year=undefined) {
+function setYear(year="") {
     let yearElement = document.querySelector("#year");
 
-    if (year == undefined) {
-        let currentYear = new Date().getFullYear();
+    if (year == "") {
+        let currentYear = new Date().getFullYear().toString();
         yearElement.innerHTML = currentYear;
     } else {
         yearElement.innerHTML = year;
