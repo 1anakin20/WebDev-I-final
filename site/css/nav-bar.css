@@ -50,8 +50,16 @@ body {
 }
 
 #sidebar > ul > li:hover:not(.separator) {
-    background-color: gray;
     border-radius: 6px;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-name: opaque;
+}
+
+@keyframes opaque {
+    to {
+        background-color: gray;
+    }
 }
 
 .separator {
