@@ -7,6 +7,17 @@ body {
     background-image: url("../image/texture/concrete-wall-3.png");
 }
 
+.opaque:hover {
+    animation: opaque 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opaque {
+    to {
+        background-color: gray;
+    }
+}
+
 /* Navbar */
 #menu-bar {
     padding: 5px;
@@ -51,14 +62,6 @@ body {
 
 #sidebar > ul > li:hover:not(.separator) {
     border-radius: 6px;
-    animation: opaque 500ms;
-    animation-fill-mode: forwards;
-}
-
-@keyframes opaque {
-    to {
-        background-color: gray;
-    }
 }
 
 .separator {
