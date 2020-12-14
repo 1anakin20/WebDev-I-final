@@ -32,4 +32,4 @@ function setup() {
     setYear();
 }
 
-window.onload = setup;
+window.addEventListener("load", setup);
