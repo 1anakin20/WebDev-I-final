@@ -23,7 +23,7 @@ function setYear(year="") {
         let currentYear = new Date().getFullYear().toString();
         yearElement.innerHTML = currentYear;
     } else {
-        yearElement.innerHTML = year;
+        yearElement.textContent = year;
     }
 }
 
