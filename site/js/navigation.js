@@ -30,7 +30,7 @@ function setYear(year="") {
 function setup() {
     let about = document.querySelector("#about");
     about.addEventListener("click", function() {
-        window.alert("Authors: Joseph Dubrovsky, Marian Plamonov, Tomas Daniel Nieto.\n2020")
+        window.alert("Authors: Joseph Dubrovsky, Marian Hristov, Tomas Daniel Nieto.\n2020")
     });
 
     clock();
