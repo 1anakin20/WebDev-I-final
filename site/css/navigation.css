@@ -1,3 +1,9 @@
+@keyframes opaque {
+    to {
+        background-color: gray;
+    }
+}
+
 body {
     margin: 0;
 }
@@ -10,12 +16,6 @@ body {
 .opaque:hover {
     animation: opaque 500ms;
     animation-fill-mode: forwards;
-}
-
-@keyframes opaque {
-    to {
-        background-color: gray;
-    }
 }
 
 .hidden-menu {
