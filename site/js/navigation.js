@@ -3,20 +3,24 @@
  */
 function clock() {
     let date = new Date();
-    let time = date.getHours() + ":" + date.getMinutes();
+    let time = date.getHours() + ":";
+    let minutes = date.getMinutes();
+    if (minutes < 10) {
+        time += "0" + minutes;
+    } else {
+        time += minutes;
+    }
 
-    let clockElement = document.querySelector("#clock");
-    clockElement.innerHTML = time;
-
+    document.querySelector("#clock").innerHTML = time;
     // Update each minute
-    setInterval(clock, 1000*60);
+    setInterval(clock, 1000);
 }
 
 /**
  * Sets the year in the menu bar
  * @param {string} year - Year to display, leave the string empty for current year
  */
-function setYear(year="") {
+function setYear(year = "") {
     let yearElement = document.querySelector("#year");
 
     if (year == "") {
@@ -29,7 +33,7 @@ function setYear(year="") {
 
 function setup() {
     let about = document.querySelector("#about");
-    about.addEventListener("click", function() {
+    about.addEventListener("click", function () {
         window.alert("Authors: Joseph Dubrovsky, Marian Hristov, Tomas Daniel Nieto.\n2020")
     });
 
