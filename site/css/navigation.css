@@ -18,6 +18,23 @@ body {
     }
 }
 
+.hidden-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    background-color: #8f8c8c;
+}
+
+.hidden-menu > li {
+    padding: 2px 7px;
+}
+
+.hidden-menu > li:hover {
+    color: white;
+    background-color: darkblue;
+}
+
 /* Navbar */
 #menu-bar {
     padding: 0 10px;
@@ -39,6 +56,10 @@ body {
 .status-menus {
     float: right;
     padding-left: 10px;
+}
+
+#logo-menu:hover > .hidden-menu {
+    display: block;
 }
 
 /* Sidebar */
