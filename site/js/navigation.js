@@ -21,13 +21,18 @@ function setYear(year="") {
 
     if (year == "") {
         let currentYear = new Date().getFullYear().toString();
-        yearElement.innerHTML = currentYear;
+        yearElement.textContent = currentYear;
     } else {
         yearElement.textContent = year;
     }
 }
 
 function setup() {
+    let about = document.querySelector("#about");
+    about.addEventListener("click", function() {
+        window.alert("Authors: Joseph Dubrovsky, Marian Plamonov, Tomas Daniel Nieto.\n2020")
+    });
+
     clock();
     setYear();
 }
