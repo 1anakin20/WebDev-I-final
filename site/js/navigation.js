@@ -22,8 +22,6 @@ function clock() {
     }
 
     document.querySelector("#clock").innerHTML = time;
-    // Update each minute
-    setInterval(clock, 1000);
 }
 
 /**
@@ -53,6 +51,8 @@ function setup() {
     $("#sidebar").css("height", "100%");
 
     clock();
+    // Update each minute
+    setInterval(clock, 1000);
     setYear();
 }
 
