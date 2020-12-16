@@ -52,7 +52,7 @@ function setup() {
 
     clock();
     // Update each minute
-    setInterval(clock, 1000);
+    window.setInterval(clock, 1000);
     setYear();
 }
 
