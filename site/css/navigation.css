@@ -39,6 +39,13 @@ body {
 }
 
 /* Navbar */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 nav {
     font-size: 1.65em;
     background-color: #8f8c8c;
@@ -74,11 +81,7 @@ nav {
     display: block;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
+/* Container of the content */
 
 div#container {
     display: flex;
@@ -86,26 +89,18 @@ div#container {
     width: 100%;
 }
 
-aside {
-    flex-shrink: 0;
-    width: max-content;
-    background-color: #8f8c8c;
-}
-
+/* Content */
 main {
     margin: 2em;
     flex-grow: 1;
 }
 
-footer {
-    border-top: 2px solid black;
-    padding: 2em;
-    clear: both;
-    width: 100%;
-}
+/* Sidebar  */
 
-footer>table {
-    margin: auto;
+aside {
+    flex-shrink: 0;
+    width: max-content;
+    background-color: #8f8c8c;
 }
 
 #sidebar {
@@ -143,4 +138,40 @@ footer>table {
 .separator {
     width: 85%;
     margin: auto;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid black;
+    padding: 2em;
+    clear: both;
+    width: 100%;
+}
+
+footer>table {
+    border-collapse: collapse;
+    display: table;
+    text-align: center;
+    margin: auto;
+}
+
+footer>table th {
+    font-size: 1.4em;
+    border-bottom: 2px solid black;
+}
+
+footer>table th:first {
+    text-align: left;
+}
+
+footer>table td {
+    font-size: 1.2em;
+}
+
+footer>table>tbody>tr td:first-child {
+    text-align: left;
+}
+
+footer>table * {
+    padding: 10px 1em;
 }
