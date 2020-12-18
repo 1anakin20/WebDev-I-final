@@ -37,6 +37,7 @@ body {
 .title-bar,
 .window,
 button,
+.button,
 input,
 label,
 option,
@@ -45,7 +46,7 @@ textarea,
 ul.tree-view {
     font-family: "Pixelated MS Sans Serif", Arial;
     -webkit-font-smoothing: none;
-    font-size: 11px
+    font-size: 15px
 }
 
 h1 {
@@ -69,7 +70,8 @@ u {
     border-bottom: .5px solid #222
 }
 
-button {
+button,
+.button {
     box-sizing: border-box;
     border: none;
     border-radius: 0;
@@ -79,7 +81,8 @@ button {
 }
 
 .vertical-bar,
-button {
+button,
+.button {
     background: silver;
     box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf
 }
@@ -89,7 +92,8 @@ button {
     height: 20px
 }
 
-button:not(:disabled):active {
+button:not(:disabled):active,
+.button:not(:disabled):active {
     box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
     padding: 2px 11px 0 13px
 }
@@ -100,12 +104,14 @@ button:not(:disabled):active {
     }
 }
 
-button:focus {
+button:focus,
+.button:focus {
     outline: 1px dotted #000;
     outline-offset: -4px
 }
 
-button::-moz-focus-inner {
+button::-moz-focus-inner,
+.button::-moz-focus-inner {
     border: 0
 }
 
