@@ -46,7 +46,7 @@ function setup() {
     });
 
     // * Changing the height of the sidebar based on the height of the window
-
+    $("#sidebar>ul").css("top", $("header").height() + "px");
     clock();
     // Update each second
     window.setInterval(clock, 1000);
@@ -54,6 +54,8 @@ function setup() {
 }
 
 // * Changing the height of the sidebar based on the height of the window after resize
-$(window).resize(function () {});
+$(window).resize(function () {
+    $("#sidebar>ul").css("top", $("header").height() + "px");
+});
 
 window.addEventListener("load", setup);
