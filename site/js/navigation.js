@@ -39,14 +39,24 @@ function setYear(year = "") {
     }
 }
 
+function playSoundNavigation(event) {
+    if (event.target.tagName === 'A') {
+        let audio = new Audio('/site/sound/popp.mp3')
+        audio.play();
+    }
+}
+
 function setup() {
     let about = document.querySelector("#about");
     about.addEventListener("click", function () {
         window.alert("Authors:\nJoseph Dubrovsky, Marian Hristov, Tomas Daniel Nieto.\n2020");
     });
 
+    document.addEventListener("click", playSoundNavigation)
+
     // * Changing the height of the sidebar based on the height of the window
     $("#sidebar>ul").css("top", $("header").height() + "px");
+
     clock();
     // Update each second
     window.setInterval(clock, 1000);
