@@ -74,15 +74,47 @@ nav {
     display: block;
 }
 
-/* Sidebar */
-#sidebar {
-    font-size: 1.5em;
-    float: right;
+header {
+    width: 100%;
+}
+
+div#container {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+aside {
+    flex-shrink: 0;
+    width: max-content;
     background-color: #8f8c8c;
-    border-left: 2px solid;
+}
+
+main {
+    margin: 2em;
+    flex-grow: 1;
+}
+
+footer {
+    border-top: 2px solid black;
+    padding: 2em;
+    clear: both;
+    width: 100%;
+}
+
+footer>table {
+    margin: auto;
+}
+
+#sidebar {
+    height: 100%;
+    font-size: 1.5em;
+    border-right: 2px solid;
 }
 
 #sidebar>ul {
+    position: sticky;
+    top: 0;
     list-style: none;
     padding: 0;
     border: 3px;

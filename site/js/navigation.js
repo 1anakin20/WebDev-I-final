@@ -46,21 +46,14 @@ function setup() {
     });
 
     // * Changing the height of the sidebar based on the height of the window
-    $("main").css("height", $(window).height() - $("nav").height() + "px");
-    $("aside").css("height", "100%");
-    $("#sidebar").css("height", "100%");
 
     clock();
-    // Update each minute
+    // Update each second
     window.setInterval(clock, 1000);
     setYear();
 }
 
 // * Changing the height of the sidebar based on the height of the window after resize
-$(window).resize(function () {
-    $("main").css("height", $(window).height() - $("nav").height() + "px");
-    $("aside").css("height", "100%");
-    $("#sidebar").css("height", "100%");
-});
+$(window).resize(function () {});
 
 window.addEventListener("load", setup);
