@@ -1,5 +1,10 @@
-form {
-    width: 50%;
+body {
+    background-color: #008080;
+}
+
+#form-window {
+    height: 80vh;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -9,9 +14,21 @@ input, label, select, textarea {
     margin-bottom: 20px;
 }
 
+.window-body * {
+    min-width: 0;
+}
+
 fieldset {
-    border-width: 10px;
+    border-width: thin;
     border-style: solid;
     border-color: grey;
 }
 
+#comments {
+    height: 10em;
+    width: 80%;
+}
+
+#submit {
+    margin: 10px;
+}

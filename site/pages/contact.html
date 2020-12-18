@@ -8,28 +8,35 @@
     <title>Contact</title>
 </head>
 <body>
-    <form action="send" method="post">
-        <fieldset>
-            <legend> 
-                Indentifying information
-            </legend>
-            <label for="name">name</label>
-            <input id="name" type="text"><br>
-            <label for="email">email</label>
-            <input id="email" type="email"><br>
-            <label for="page">Page</label>
-            <select name="page" id="page">
-                <optgroup label="pages">
-                    <option value="war">war</option>
-                    <option value="private">private</option>
-                    <option value="commercial">commercial</option>
-                    <option value="quantum">quantum</option>
-                </optgroup>
-            </select><br>
-            <label for="comments">Enter your comments</label><br>
-            <textarea name="comments" id="comments" placeholder="Enter your comments here" cols="60" rows="10"></textarea>
-        </fieldset>
-        <input type="submit" value="Send comments">
-    </form>
+    <div id="form-window" class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Send us your comments</div>
+        </div>
+        <div class="window-body">
+            <form action="send" method="post">
+                <fieldset>
+                    <legend> 
+                        Indentifying information
+                    </legend>
+                    <label for="name">name</label>
+                    <input id="name" type="text"><br>
+                    <label for="email">email</label>
+                    <input id="email" type="email"><br>
+                    <label for="page">Page</label>
+                    <select name="page" id="page">
+                        <optgroup label="pages">
+                            <option value="war">War</option>
+                            <option value="private">Private</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="quantum">Quantum</option>
+                        </optgroup>
+                    </select><br>
+                    <label for="comments">Comments</label><br>
+                    <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
+                </fieldset>
+                <input id="submit" class="button" type="submit" value="Send comments">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
