@@ -38,7 +38,10 @@ function setYear(year = "") {
         yearElement.textContent = year;
     }
 }
-
+/**
+ * Plays sounds when items are clicked in the website
+ * @param {*} event 
+ */
 function playSoundNavigation(event) {
     if (event.target.tagName === 'A') {
         let audio = new Audio('/site/sound/popp.mp3')
