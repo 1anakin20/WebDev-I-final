@@ -101,6 +101,7 @@ aside {
     flex-shrink: 0;
     width: max-content;
     background-color: #8f8c8c;
+    z-index: -1;
 }
 
 #sidebar {
