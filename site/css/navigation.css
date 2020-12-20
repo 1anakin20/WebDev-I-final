@@ -42,6 +42,7 @@ body {
 
 header {
     position: sticky;
+    z-index: 10;
     top: 0;
     width: 100%;
 }
@@ -112,6 +113,7 @@ aside {
 #sidebar>ul {
     position: sticky;
     top: 0;
+    z-index: 5;
     list-style: none;
     padding: 0;
     border: 3px;
