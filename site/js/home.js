@@ -1,5 +1,5 @@
 function closePopup() {
-    let popup = document.querySelector("#pandemic-popup");
+    let popup = document.querySelector("#wrapper-popup");
     popup.style.display = "none";
 }
 
