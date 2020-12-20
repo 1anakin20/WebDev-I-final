@@ -1,5 +1,3 @@
-let muted = false;
-
 /**
  *  Updates the time each minute 
  */
@@ -41,16 +39,6 @@ function setYear(year = "") {
     }
 }
 
-function setMuted() {
-    muted = !muted;
-    let soundIcon = document.querySelector("#sound-icon");
-    if (muted) {
-        soundIcon.className = "fas fa-volume-mute";
-    } else {
-        soundIcon.className = "fas fa-volume-up";
-    }
-}
-
 /**
  * Plays sounds when items are clicked in the website
  * @param {*} event 
@@ -67,9 +55,6 @@ function setup() {
     about.addEventListener("click", function () {
         window.alert("Authors:\nJoseph Dubrovsky, Marian Hristov, Tomas Daniel Nieto.\n2020");
     });
-
-    document.addEventListener("click", playSoundNavigation);
-    document.querySelector("#sound").addEventListener("click", setMuted);
 
     // * Changing the height of the sidebar based on the height of the window
     $("#sidebar>ul").css("top", $("header").height() + "px");
