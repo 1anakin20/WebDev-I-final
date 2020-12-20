@@ -1,0 +1,13 @@
+#pandemic-popup {
+    position: fixed;
+    margin-left: 10%;
+    width:  80%;
+}
+
+#pandemic-popup h1 {
+    font-size: xx-large;
+}
+
+.center-row {
+    justify-content: center;
+}
