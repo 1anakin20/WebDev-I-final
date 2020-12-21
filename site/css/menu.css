@@ -1,0 +1,180 @@
+@keyframes opaque {
+    to {
+        background-color: gray;
+    }
+}
+
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.texture {
+    background-color: #8f8c8c;
+    background-image: url("../image/texture/concrete-wall-3.png");
+}
+
+/* Hidden About Us */
+.hidden-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    background-color: #8f8c8c;
+}
+
+.hidden-menu>li {
+    padding: 2px 7px;
+}
+
+.hidden-menu>li:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+/* Navbar */
+
+header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    font-size: 1.65em;
+    background-color: #8f8c8c;
+}
+
+#menu-bar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#menu-bar li {
+    float: left;
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu-bar li.status-menus {
+    float: right;
+}
+
+.status-menus>a {
+    color: black;
+    text-decoration: none;
+}
+
+#logo-menu:hover>.hidden-menu {
+    display: block;
+}
+
+/* Container of the content */
+
+div#container {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Content */
+main {
+    margin: 2em;
+    flex-grow: 1;
+}
+
+/* Sidebar  */
+
+aside {
+    flex-shrink: 0;
+    width: max-content;
+    background-color: #8f8c8c;
+}
+
+#sidebar {
+    height: 100%;
+    font-size: 1.5em;
+    border-right: 2px solid;
+}
+
+#sidebar>ul {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    list-style: none;
+    padding: 0;
+    border: 3px;
+}
+
+#sidebar>ul>li:not(.separator) {
+    padding: 0.75em 1.5em;
+    margin: 0 1em;
+}
+
+#sidebar>ul>li:hover:not(.separator) {
+    border-radius: 6px;
+}
+
+.opaque>a {
+    color: black;
+    text-decoration: none;
+}
+
+.opaque:hover {
+    animation: opaque 500ms forwards;
+}
+
+.separator {
+    width: 85%;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid black;
+    padding: 2em;
+    clear: both;
+    width: 100%;
+}
+
+footer>table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    display: table;
+    text-align: center;
+    margin: auto;
+}
+
+footer>table th {
+    font-size: 1.4em;
+    border-bottom: 2px solid black;
+}
+
+footer>table th:first {
+    text-align: left;
+}
+
+footer>table td {
+    font-size: 1.2em;
+}
+
+footer>table>tbody>tr td:first-child {
+    text-align: left;
+}
+
+footer>table * {
+    padding: 10px 1em;
+}
