@@ -11,6 +11,7 @@ main {
 .window {
     background: silver;
     border: medium solid black;
+    height: 100%;
 }
 
 .title-bar {
