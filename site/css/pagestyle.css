@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Apple_SF_Pro;
+    src: url(../fonts/private/SFProDisplay-Regular.ttf);
+    /* link:  https://fontsfree.net/sf-pro-display-regular-font-download.html */
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: teal;
 }
@@ -5,7 +15,7 @@ body {
 main {
     padding: 0;
     background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Apple_SF_Pro, Helvetica, sans-serif;
 }
 
 article {
@@ -14,26 +24,59 @@ article {
     margin: auto;
 }
 
-article>img {
+article h2 {
+    text-align: center;
+}
+
+article img {
     padding-top: 10px;
 }
 
-article>p {
-    margin: 1em 0;
-    text-align: justify;
+article p {
+    font-size: 1.2em;
 }
 
 a.source {
     margin: 1em 0 0;
 }
 
-.image-container {
-    margin: 1em;
-    text-align: center;
+a.source:link {
+    color: black;
+    text-decoration: none;
 }
 
-#image_mark_1 {
-    float: right;
+a.source:visited {
+    background-color: none;
+    color: gray;
+}
+
+a.source:active {
+    background-color: yellow;
+}
+
+hr {
+    clear: both;
+}
+
+/* Normal article content */
+.image-container.normal {
+    text-align: center;
+    margin: 1em;
+}
+
+/* Article content that is side by side */
+
+.side-content-container {
+    display: flex;
+}
+
+.text-container.side {
+    padding: 1em;
+}
+
+.image-container.side {
+    padding: 1em;
+    text-align: center;
 }
 
 /* Window components */
