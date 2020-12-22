@@ -8,6 +8,10 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+article {
+    padding: 10px 0;
+}
+
 .window {
     background: silver;
     border: medium solid black;
