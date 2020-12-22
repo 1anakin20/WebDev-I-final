@@ -1,0 +1,58 @@
+body {
+    background-color: teal;
+}
+
+main {
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.window {
+    background: silver;
+    border: medium solid black;
+}
+
+.title-bar {
+    background-color: darkblue;
+    padding: 3px 2px 3px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-controls {
+    display: flex;
+}
+
+.title-bar-text {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.close-home {
+    padding: 1ex;
+    border-radius: 100%;
+    background-color: rgba(255, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.close-home:hover {
+    background-color: rgba(255, 0, 0);
+}
+
+.close-home:hover .indication {
+    display: initial;
+}
+
+.indication {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: red;
+}
+
+.window-body {
+    padding: 1em;
+}
