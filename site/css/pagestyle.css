@@ -14,16 +14,26 @@ article {
     margin: auto;
 }
 
-article > img {
+article>img {
     padding-top: 10px;
 }
 
-article > p {
+article>p {
+    margin: 1em 0;
     text-align: justify;
 }
 
 a.source {
     margin: 1em 0 0;
+}
+
+.image-container {
+    margin: 1em;
+    text-align: center;
+}
+
+#image_mark_1 {
+    float: right;
 }
 
 /* Window components */
@@ -76,5 +86,4 @@ a.source {
 
 .window-body {
     padding: 1em;
-    text-align: center;
 }
