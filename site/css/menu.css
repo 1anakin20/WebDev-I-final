@@ -78,6 +78,12 @@ nav {
     text-decoration: none;
 }
 
+.hidden-menu {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
 #logo-menu:hover>.hidden-menu {
     display: block;
 }
