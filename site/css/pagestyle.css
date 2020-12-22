@@ -56,4 +56,24 @@ main {
 
 .window-body {
     padding: 1em;
+    text-align: center;
+}
+
+.window-body * {
+    margin: 1em 0;
+}
+
+.window-body>article {}
+
+.window-body>article>img {
+    display: block;
+    margin: auto;
+}
+
+.window-body>article>p {
+    text-align: justify;
+}
+
+a.source {
+    margin: 1em 0 0;
 }
