@@ -12,6 +12,12 @@ article {
     padding: 10px 0;
 }
 
+article > img {
+    padding-top: 10px;
+}
+
+/* Window components */
+
 .window {
     background: silver;
     border: medium solid black;
