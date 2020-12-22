@@ -8,6 +8,26 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+article {
+    padding: 10px 0;
+    display: block;
+    margin: auto;
+}
+
+article > img {
+    padding-top: 10px;
+}
+
+article > p {
+    text-align: justify;
+}
+
+a.source {
+    margin: 1em 0 0;
+}
+
+/* Window components */
+
 .window {
     background: silver;
     border: medium solid black;
@@ -57,23 +77,4 @@ main {
 .window-body {
     padding: 1em;
     text-align: center;
-}
-
-.window-body * {
-    margin: 1em 0;
-}
-
-.window-body>article {}
-
-.window-body>article>img {
-    display: block;
-    margin: auto;
-}
-
-.window-body>article>p {
-    text-align: justify;
-}
-
-a.source {
-    margin: 1em 0 0;
 }
