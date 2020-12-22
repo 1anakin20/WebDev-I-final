@@ -58,7 +58,7 @@ function setup() {
 
     // * Changing the height of the sidebar based on the height of the window
     $("#sidebar>ul").css("top", $("header").height() + "px");
-
+    $("*, html").css("scroll-margin-top", $("header").height() + parseInt($("main>.window>.window-body>article>h2").css("margin-top")) + "px");
     clock();
     // Update each second
     window.setInterval(clock, 1000);
