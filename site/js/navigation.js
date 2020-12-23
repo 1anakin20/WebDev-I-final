@@ -29,7 +29,7 @@ function clock() {
  **/
 function setYear() {
     let currentYear = new Date().getFullYear().toString();
-    yearElement.textContent = currentYear;
+    document.querySelector("#year").textContent = currentYear;
 }
 
 /**
