@@ -26,17 +26,10 @@ function clock() {
 
 /**
  * Sets the year in the menu bar
- * @param {string} year - Year to display, leave the string empty for current year
  **/
-function setYear(year = "") {
-    let yearElement = document.querySelector("#year");
-
-    if (year == "") {
-        let currentYear = new Date().getFullYear().toString();
-        yearElement.textContent = currentYear;
-    } else {
-        yearElement.textContent = year;
-    }
+function setYear() {
+    let currentYear = new Date().getFullYear().toString();
+    yearElement.textContent = currentYear;
 }
 
 /**
