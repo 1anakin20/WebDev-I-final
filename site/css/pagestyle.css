@@ -72,6 +72,17 @@ hr {
     text-align: center;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: thin solid black;
+}
+
+
 /* Window components */
 
 .window {
