@@ -51,6 +51,17 @@ hr {
     clear: both;
 }
 
+/* General article styling */
+.text-container a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.text-container a:hover {
+    text-decoration: underline;
+}
+
 /* Normal article content */
 .image-container.normal {
     text-align: center;
