@@ -84,6 +84,11 @@ nav {
     right: 10px;
 }
 
+#logo {
+    height: 1em;
+    width: 1em;
+}
+
 #logo-menu:hover>.hidden-menu {
     display: block;
 }
