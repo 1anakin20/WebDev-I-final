@@ -184,3 +184,12 @@ footer>table>tbody>tr td:first-child {
 footer>table * {
     padding: 10px 1em;
 }
+
+footer>table a {
+    text-decoration: none;
+    color: black;
+}
+
+footer>table a:hover {
+    text-decoration: underline;
+}

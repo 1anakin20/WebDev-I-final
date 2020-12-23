@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Contact, comments, questions">
@@ -12,6 +13,7 @@
     <script src="js/navigation.js"></script>
     <title>Contact</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -45,40 +47,46 @@
             </ul>
         </nav>
     </header>
-    <div id="form-window" class="window">
-        <div class="title-bar">
-            <div class="title-bar-controls">
-                <a href="../home.html" class="close-home">
-                    <p class="indication">Go back to home. IT WILL NOT SEND YOUR FORM</p>
-                </a>
+    <main>
+    <div id="container">
+        <div id="form-window" class="window">
+            <div class="title-bar">
+                <div class="title-bar-controls">
+                    <a href="../home.html" class="close-home">
+                        <p class="indication">Go back to home. IT WILL NOT SEND YOUR FORM</p>
+                    </a>
+                </div>
+                <div class="title-bar-text">Send us your comments</div>
             </div>
-            <div class="title-bar-text">Send us your comments</div>
-        </div>
-        <div class="window-body">
-            <form action="send" method="post">
-                <fieldset>
-                    <legend> 
-                        Indentifying information
-                    </legend>
-                    <label for="name">name</label>
-                    <input id="name" type="text"><br>
-                    <label for="email">email</label>
-                    <input id="email" type="email"><br>
-                    <label for="page">Page</label>
-                    <select name="page" id="page">
-                        <optgroup label="pages">
-                            <option value="war">War</option>
-                            <option value="private">Private</option>
-                            <option value="commercial">Commercial</option>
-                            <option value="quantum">Quantum</option>
-                        </optgroup>
-                    </select><br>
-                    <label for="comments">Comments</label><br>
-                    <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
-                </fieldset>
-                <input id="submit" class="button" type="submit" value="Send comments">
-            </form>
+            <div class="window-body">
+                <form action="send" method="post">
+                    <fieldset>
+                        <legend>
+                            Indentifying information
+                        </legend>
+                        <label for="name">name</label>
+                        <input id="name" type="text"><br>
+                        <label for="email">email</label>
+                        <input id="email" type="email"><br>
+                        <label for="page">Page</label>
+                        <select name="page" id="page">
+                            <optgroup label="pages">
+                                <option value="war">War</option>
+                                <option value="private">Private</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="quantum">Quantum</option>
+                            </optgroup>
+                        </select><br>
+                        <label for="comments">Comments</label><br>
+                        <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
+                    </fieldset>
+                    <input id="submit" class="button" type="submit" value="Send comments">
+                </form>
+            </div>
         </div>
     </div>
+          
+</main>
 </body>
+
 </html>
