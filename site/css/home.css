@@ -55,6 +55,14 @@
     width: 100%;
 }
 
+h2.typewriter {
+    font-size: 2em;
+}
+
+.typewriter {
+    font-size: 1.6em;
+}
+
 .text-container {
     text-align: center;
     padding: 1em;
