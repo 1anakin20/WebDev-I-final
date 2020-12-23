@@ -45,11 +45,6 @@
                 <li class="app-menus opaque">
                     <a href=""><i class="fas fa-home"></i> Home</a>
                 </li>
-                <li id="logo-menu" class="app-menus opaque"><i class="fab fa-apple"></i>
-                    <ul class="hidden-menu">
-                        <li id="about">About</li>
-                    </ul>
-                </li>
                 <li class="app-menus opaque">
                     <a href=""><i class="fas fa-question-circle"></i> War</a>
                 </li>
@@ -66,6 +61,11 @@
                     <a href=""><i class="fas fa-id-badge"></i> Contact</a>
                 </li>
                 <!-- System menus -->
+                <li id="logo-menu" class="status-menus"><i class="fab fa-apple"></i>
+                    <ul class="hidden-menu">
+                        <li id="about">About</li>
+                    </ul>
+                </li>
                 <li id="clock" class="status-menus">0:00</li>
                 <li id="year" class="status-menus">1999</li>
             </ul>
@@ -77,13 +77,23 @@
                 <div class="title-bar">
                     <div class="title-bar-text">Home</div>
                 </div>
-                <div class="window-body"></div>
-                <article>
-                    <h2>About us</h2>
-                    <p>
-                        Welcome to our website. We contain many facts about computer history. Please enjoy your journey.
-                    </p>
-                </article>
+                <div class="window-body">
+                    <article>
+                        <h2 class="typewriter"></h2>
+                        <div class="text-container normal typewriter">
+                            <p id="text1"></p>
+                            <p id="text2"></p>
+                            <p id="text3"></p>
+                        </div>
+                        <div id="computer" class="image-container normal">
+                            <img src="image/home/computer.png" alt="Tatung Einstein Computer">
+                            <br>
+                            <a class="source" target="_blank"
+                                href="https://commons.wikimedia.org/wiki/File:Tatung-einstein-computer.png">Image
+                                source</a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </main>
     </div>
