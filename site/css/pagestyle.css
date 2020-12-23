@@ -80,6 +80,7 @@ table,
 td,
 th {
     border: thin solid black;
+    padding: 3px;
 }
 
 
