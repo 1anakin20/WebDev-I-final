@@ -72,13 +72,13 @@ hr {
     text-align: center;
 }
 
-table {
+table.data {
     border-collapse: collapse;
 }
 
-table,
-td,
-th {
+.data table,
+.data td,
+.data th {
     border: thin solid black;
     padding: 3px;
 }
