@@ -50,45 +50,76 @@
         </nav>
     </header>
     <main>
-    <div id="container">
-        <div id="form-window" class="window">
-            <div class="title-bar">
-                <div class="title-bar-controls">
-                    <a href="../home.html" class="close-home">
-                        <p class="indication">Go back to home. IT WILL NOT SEND YOUR FORM</p>
-                    </a>
+        <div id="container">
+            <div id="form-window" class="window">
+                <div class="title-bar">
+                    <div class="title-bar-controls">
+                        <a href="../home.html" class="close-home">
+                            <p class="indication">Go back to home. IT WILL NOT SEND YOUR FORM</p>
+                        </a>
+                    </div>
+                    <div class="title-bar-text">Send us your comments</div>
                 </div>
-                <div class="title-bar-text">Send us your comments</div>
-            </div>
-            <div class="window-body">
-                <form action="send" method="post">
-                    <fieldset>
-                        <legend>
-                            Indentifying information
-                        </legend>
-                        <label for="name">name</label>
-                        <input id="name" type="text"><br>
-                        <label for="email">email</label>
-                        <input id="email" type="email"><br>
-                        <label for="page">Page</label>
-                        <select name="page" id="page">
-                            <optgroup label="pages">
-                                <option value="war">War</option>
-                                <option value="private">Private</option>
-                                <option value="commercial">Commercial</option>
-                                <option value="quantum">Quantum</option>
-                            </optgroup>
-                        </select><br>
-                        <label for="comments">Comments</label><br>
-                        <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
-                    </fieldset>
-                    <input id="submit" class="button" type="submit" value="Send comments">
-                </form>
+                <div class="window-body">
+                    <form action="send" method="post">
+                        <fieldset>
+                            <legend>
+                                Indentifying information
+                            </legend>
+                            <label for="name">name</label>
+                            <input id="name" type="text"><br>
+                            <label for="email">email</label>
+                            <input id="email" type="email"><br>
+                            <label for="page">Page</label>
+                            <select name="page" id="page">
+                                <optgroup label="pages">
+                                    <option value="war">War</option>
+                                    <option value="private">Private</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="quantum">Quantum</option>
+                                </optgroup>
+                            </select><br>
+                            <label for="comments">Comments</label><br>
+                            <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
+                        </fieldset>
+                        <input id="submit" class="button" type="submit" value="Send comments">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-          
-</main>
+    </main>
+    <footer class="texture">
+        <table>
+            <caption>&copy; 2020</caption>
+            <thead>
+                <tr>
+                    <th>Names</th>
+                    <th>Identifications</th>
+                    <th>Pages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marian Hristov</td>
+                    <td>2033348</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202033348/site/pages/contact.html"
+                            target="_blank">Page</a></td>
+                </tr>
+                <tr>
+                    <td>Tomas Daniel Nieto</td>
+                    <td>2034643</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202034643/site/pages/contact.html"
+                            target="_blank">Page</a></td>
+                </tr>
+                <tr>
+                    <td>Joseph Dubrovsky</td>
+                    <td>2037870</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202037870/site/pages/contact.html"
+                            target="_blank">Page</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
 </body>
 
 </html>
