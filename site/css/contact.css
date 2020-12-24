@@ -10,6 +10,14 @@ textarea {
     margin-bottom: 20px;
 }
 
+input:not([type=submit]):valid {
+    box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.75);
+}
+
+input:invalid {
+    box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.75);
+}
+
 fieldset {
     border-width: thin;
     border-style: solid;

@@ -48,7 +48,7 @@
                 <li id="clock" class="status-menus">0:00</li>
                 <li id="year" class="status-menus">1999</li>
             </ul>
-            <div id="explainer" class="window"> 
+            <div id="explainer" class="window">
                 <div class="window-body">
                     <p>
                         The logo shows a computer with a hourglass to demostrate the traveling trough time.
@@ -69,17 +69,17 @@
                     <div class="title-bar-text">Send us your comments</div>
                 </div>
                 <div class="window-body">
-                    <form action="send" method="post">
+                    <form action="send" method="POST">
                         <fieldset>
                             <legend>
                                 Indentifying information
                             </legend>
                             <label for="name">name</label>
-                            <input id="name" type="text"><br>
+                            <input id="name" type="text" name="user_info" required><br>
                             <label for="email">email</label>
-                            <input id="email" type="email"><br>
+                            <input id="email" type="email" name="user_info" required><br>
                             <label for="page">Page</label>
-                            <select name="page" id="page">
+                            <select name="page" id="page" required>
                                 <optgroup label="pages">
                                     <option value="war">War</option>
                                     <option value="private">Private</option>
@@ -88,9 +88,10 @@
                                 </optgroup>
                             </select><br>
                             <label for="comments">Comments</label><br>
-                            <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
+                            <textarea name="comments" id="comments" placeholder="Enter your comments here"
+                                required></textarea>
                         </fieldset>
-                        <input id="submit" class="button" type="submit" value="Send comments">
+                        <button type="submit" id="submit" class="button">Send Comments</button>
                     </form>
                 </div>
             </div>
