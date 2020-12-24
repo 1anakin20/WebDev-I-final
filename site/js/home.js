@@ -28,6 +28,8 @@ function closePopup() {
 }
 
 function setup() {
+    document.querySelector("#empty-heading").textContent = "";
+
     let close = document.querySelectorAll(".close-popup");
     console.log(close);
     for (const e of close) {

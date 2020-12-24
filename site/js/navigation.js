@@ -49,6 +49,11 @@ function setup() {
         window.alert("Authors:\nJoseph Dubrovsky, Marian Hristov, Tomas Daniel Nieto.\n2020");
     });
 
+    let logo = document.querySelector("#logo-menu");
+    logo.addEventListener("click", function () {
+        window.alert("The logo shows a computer with a hourglass to demostrate the traveling trough time.");
+    });
+
     // * Changing the height of the sidebar based on the height of the window
     $("#sidebar>ul").css("top", $("header").height() + "px");
     $(".hidden-menu").css("top", ($("header").height() - 15) + "px");
