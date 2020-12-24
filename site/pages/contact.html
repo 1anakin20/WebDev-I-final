@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Contact, comments, questions">
+    <meta name="description" content="Page to send comments">
+    <meta name="author" content="Marian Hristov, Joseph Dubrovsky, Tomas Daniel Nieto">
+    <meta name="generator" content="VSCode">
+    <link rel="shortcut icon" type="image/ico" href="../image/favicon.ico">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/pagestyle.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="https://kit.fontawesome.com/0aeaec2210.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/navigation.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu-bar" class="texture">
+                <li class="app-menus opaque">
+                    <a href="../home.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="war.html"><i class="fas fa-question-circle"></i> War</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="private.html"><i class="fas fa-server"></i> Private</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="commercial.html"><i class="fas fa-desktop"></i> Commercial</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="quantum.html"><i class="fas fa-atom"></i> Quantum</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="contact.html"><i class="fas fa-id-badge"></i> Contact</a>
+                </li>
+                <!-- System menus -->
+                <li id="logo-menu" class="status-menus"><img id="logo" src="../image/logo.png" alt="">
+                    <ul class="hidden-menu">
+                        <li id="about">About</li>
+                    </ul>
+                </li>
+                <li id="clock" class="status-menus">0:00</li>
+                <li id="year" class="status-menus">1999</li>
+            </ul>
+            <div id="explainer" class="window">
+                <div class="window-body">
+                    <p>
+                        The logo shows a computer with a hourglass to demostrate the traveling trough time.
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <div id="form-window" class="window">
+                <div class="title-bar">
+                    <div class="title-bar-controls">
+                        <a href="../home.html" class="close-home">
+                            <p class="indication">Go back to home. IT WILL NOT SEND YOUR FORM</p>
+                        </a>
+                    </div>
+                    <div class="title-bar-text">Send us your comments</div>
+                </div>
+                <div class="window-body">
+                    <form action="send" method="POST">
+                        <fieldset>
+                            <legend>
+                                Indentifying information
+                            </legend>
+                            <label for="name">name</label>
+                            <input id="name" type="text" name="user_info" required><br>
+                            <label for="email">email</label>
+                            <input id="email" type="email" name="user_info" required><br>
+                            <label for="page">Page</label>
+                            <select name="page" id="page" required>
+                                <optgroup label="pages">
+                                    <option value="war">War</option>
+                                    <option value="private">Private</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="quantum">Quantum</option>
+                                </optgroup>
+                            </select><br>
+                            <label for="comments">Comments</label><br>
+                            <textarea name="comments" id="comments" placeholder="Enter your comments here"
+                                required></textarea>
+                        </fieldset>
+                        <button type="submit" id="submit" class="button">Send Comments</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="texture">
+        <table>
+            <caption>&copy; 2020</caption>
+            <thead>
+                <tr>
+                    <th>Names</th>
+                    <th>Identifications</th>
+                    <th>Pages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marian Hristov</td>
+                    <td>2033348</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202033348/site/pages/contact.html"
+                            target="_blank">Page</a></td>
+                </tr>
+                <tr>
+                    <td>Tomas Daniel Nieto</td>
+                    <td>2034643</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202034643/site/pages/contact.html"
+                            target="_blank">Page</a></td>
+                </tr>
+                <tr>
+                    <td>Joseph Dubrovsky</td>
+                    <td>2037870</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202037870/site/pages/contact.html"
+                            target="_blank">Page</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+</body>
+
+</html>

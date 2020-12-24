@@ -20,6 +20,13 @@ body {
     background-image: url("../image/texture/concrete-wall-3.png");
 }
 
+#explainer {
+    display: none;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+}
+
 /* Hidden About Us */
 .hidden-menu {
     display: none;
@@ -76,6 +83,17 @@ nav {
 .status-menus>a {
     color: black;
     text-decoration: none;
+}
+
+.hidden-menu {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+#logo {
+    height: 1em;
+    width: 1em;
 }
 
 #logo-menu:hover>.hidden-menu {
@@ -177,4 +195,13 @@ footer>table>tbody>tr td:first-child {
 
 footer>table * {
     padding: 10px 1em;
+}
+
+footer>table a {
+    text-decoration: none;
+    color: black;
+}
+
+footer>table a:hover {
+    text-decoration: underline;
 }

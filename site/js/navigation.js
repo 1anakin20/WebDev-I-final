@@ -26,17 +26,10 @@ function clock() {
 
 /**
  * Sets the year in the menu bar
- * @param {string} year - Year to display, leave the string empty for current year
  **/
-function setYear(year = "") {
-    let yearElement = document.querySelector("#year");
-
-    if (year == "") {
-        let currentYear = new Date().getFullYear().toString();
-        yearElement.textContent = currentYear;
-    } else {
-        yearElement.textContent = year;
-    }
+function setYear() {
+    let currentYear = new Date().getFullYear().toString();
+    document.querySelector("#year").textContent = currentYear;
 }
 
 /**
@@ -56,9 +49,21 @@ function setup() {
         window.alert("Authors:\nJoseph Dubrovsky, Marian Hristov, Tomas Daniel Nieto.\n2020");
     });
 
+    
+    let explainer = document.querySelector("#explainer")
+    let logo = document.querySelector("#logo-menu");
+    logo.addEventListener("click", function () {
+        explainer.style.display = "initial";
+    });
+
+    explainer.addEventListener("click", function () {
+        explainer.style.display = "none";
+    })
+
     // * Changing the height of the sidebar based on the height of the window
     $("#sidebar>ul").css("top", $("header").height() + "px");
-
+    $(".hidden-menu").css("top", ($("header").height() - 15) + "px");
+    $("*, html").css("scroll-margin-top", $("header").height() + parseInt($("main>.window>.window-body>article").css("padding-top")) + "px");
     clock();
     // Update each second
     window.setInterval(clock, 1000);

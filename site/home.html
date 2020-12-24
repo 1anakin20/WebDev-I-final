@@ -1,25 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ca">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="keywords" content="computers, history">
+    <meta name="description" content="History of computers">
+    <meta name="author" content="Marian Hristov, Joseph Dubrovsky, Tomas Daniel Nieto">
+    <meta name="generator" content="VSCode">
+    <link rel="shortcut icon" type="image/ico" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/pagestyle.css">
     <script src="https://kit.fontawesome.com/0aeaec2210.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/home.js"></script>
+    <title>Home</title>
 </head>
 
 <body>
-    <div id="covidPopUp">
-        <div id="covidPopUp_message">
-            <i class="fas fa-window-close"></i>
-            <h1>We've made some changes.</h1>
-            <p>Due to the present pandemic we have decided to close our stores for the safety of our staff and our
-                customers. This closure is of an indertemined length.</p>
-            <p>Thank you for your understanding.</p>
+    <div id="wrapper-popup">
+        <div class="window" id="pandemic-popup">
+            <div class="title-bar">
+                <div class="title-bar-controls">
+                    <button class="close-home close-popup"></button>
+                </div>
+                <div class="title-bar-text">Important Message</div>
+            </div>
+            <div class="window-body">
+                <h1>The Virus Is Spreading! :(</h1>
+                <p>Hello! Since the beginning of the pandemic, lots of families have suffered of the consequences of the
+                    virus. This is why we want to remind you to please wear a mask and to limit your social contacts
+                    with others in order to protect the most vulnerable of us.</p>
+                <p>Thank you and stay safe.</p>
+                <button class="close-popup">Close</button>
+            </div>
         </div>
     </div>
+    <header>
+        <nav>
+            <ul id="menu-bar" class="texture">
+                <li class="app-menus opaque">
+                    <a href="home.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="pages/war.html"><i class="fas fa-question-circle"></i> War</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="pages/private.html"><i class="fas fa-server"></i> Private</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="pages/commercial.html"><i class="fas fa-desktop"></i> Commercial</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="pages/quantum.html"><i class="fas fa-atom"></i> Quantum</a>
+                </li>
+                <li class="app-menus opaque">
+                    <a href="pages/contact.html"><i class="fas fa-id-badge"></i> Contact</a>
+                </li>
+                <!-- System menus -->
+                <li id="logo-menu" class="status-menus"><img id="logo" src="image/logo.png" alt="">
+                    <ul class="hidden-menu">
+                        <li id="about">About</li>
+                    </ul>
+                </li>
+                <li id="clock" class="status-menus">0:00</li>
+                <li id="year" class="status-menus">1999</li>
+            </ul>
+            <div id="explainer" class="window">
+                <div class="window-body">
+                    <p>
+                        The logo shows a computer with a hourglass to demostrate the traveling trough time.
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <main>
+            <div class="window">
+                <div class="title-bar">
+                    <div class="title-bar-text">Home</div>
+                </div>
+                <div class="window-body">
+                    <article>
+                        <h2 id="empty-heading" class="typewriter">.</h2>
+                        <div class="text-container normal typewriter">
+                            <p id="text1"></p>
+                            <p id="text2"></p>
+                            <p id="text3"></p>
+                        </div>
+                        <div id="computer" class="image-container normal">
+                            <img src="image/home/computer.png" alt="Tatung Einstein Computer">
+                            <br>
+                            <a class="source" target="_blank"
+                                href="https://commons.wikimedia.org/wiki/File:Tatung-einstein-computer.png">Image
+                                source</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="texture">
+        <table>
+            <caption>&copy; 2020</caption>
+            <thead>
+                <tr>
+                    <th>Names</th>
+                    <th>Identifications</th>
+                    <th>Pages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marian Hristov</td>
+                    <td>2033348</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202033348/site/home.html" target="_blank">Page</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tomas Daniel Nieto</td>
+                    <td>2034643</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202034643/site/home.html" target="_blank">Page</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Joseph Dubrovsky</td>
+                    <td>2037870</td>
+                    <td><a href="https://sonic.dawsoncollege.qc.ca/~F202037870/site/home.html" target="_blank">Page</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
 </body>
-<script src="main.js"></script>
 
 </html>
