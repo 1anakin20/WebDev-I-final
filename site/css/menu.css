@@ -20,6 +20,13 @@ body {
     background-image: url("../image/texture/concrete-wall-3.png");
 }
 
+#explainer {
+    display: none;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+}
+
 /* Hidden About Us */
 .hidden-menu {
     display: none;
